@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>4936eca1-cc77-4131-86d4-79f25c5c0e11.DATABASE:kr_db</OriginalElement>
+  <nodes>
+    <node x="580.5" y="0.0">4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.drivers</node>
+    <node x="37.0" y="0.0">4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.cities</node>
+    <node x="32.0" y="190.0">4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.stations</node>
+    <node x="36.5" y="358.0">4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.trips</node>
+    <node x="199.75" y="658.0">4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.tickets</node>
+    <node x="280.5" y="391.0">4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.users</node>
+    <node x="0.0" y="799.0">4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.bus</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.trips" target="4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.stations">
+      <point x="-56.0" y="-125.0" />
+      <point x="92.5" y="333.0" />
+      <point x="90.25" y="333.0" />
+      <point x="-58.25" y="59.0" />
+    </edge>
+    <edge source="4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.tickets" target="4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.users">
+      <point x="39.25" y="-48.0" />
+      <point x="317.5" y="633.0" />
+      <point x="408.0" y="633.0" />
+      <point x="0.0" y="92.0" />
+    </edge>
+    <edge source="4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.tickets" target="4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.trips">
+      <point x="-39.25" y="-48.0" />
+      <point x="239.0" y="633.0" />
+      <point x="148.5" y="633.0" />
+      <point x="0.0" y="125.0" />
+    </edge>
+    <edge source="4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.stations" target="4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.cities">
+      <point x="0.0" y="-59.0" />
+      <point x="0.0" y="70.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.457271987842471" x="402.1428600183847" y="446.0224620138504" />
+  <SelectedNodes>
+    <node>4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.trips</node>
+    <node>4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.tickets</node>
+    <node>4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.users</node>
+    <node>4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.cities</node>
+    <node>4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.drivers</node>
+    <node>4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.stations</node>
+    <node>4936eca1-cc77-4131-86d4-79f25c5c0e11.TABLE:kr_db.public.bus</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+

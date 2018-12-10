@@ -1,0 +1,26 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine On
+</IfModule>
+ 
+<IfModule mod_rewrite.c>
+    # если /admin, то в backend
+    RewriteCond %{REQUEST_URI} ^/bilet/(admin)
+    RewriteRule ^admin/assets/(.*)$ /kr_bd/basic/backend/web/assets/$1 [L]
+    RewriteRule ^admin/css/(.*)$ /kr_bd/basic/backend/web/css/$1 [L]
+    RewriteRule ^admin/js/(.*)$ /kr_bd/basic/backend/web/js/$1 [L]
+    RewriteCond %{REQUEST_URI} !^/kr_bd/basic/backend/web/(assets|js|css|js)/
+    RewriteCond %{REQUEST_URI} ^/kr_bd/basic/(admin)
+    RewriteRule ^.*$ /bilet/backend/web/index.php [L]
+    RewriteCond %{REQUEST_URI} ^/(assets|css|js|images)
+    RewriteRule ^assets/(.*)$ /kr_bd/basic/frontend/web/assets/$1 [L]
+    RewriteRule ^css/(.*)$ /kr_bd/basic/frontend/web/css/$1 [L]
+    RewriteRule ^js/(.*)$ /kr_bd/basic/frontend/web/js/$1 [L]
+    RewriteRule ^img/(.*)$ /kr_bd/basic/frontend/web/img/$1 [L]
+    RewriteRule ^(.*)$ /kr_bd/basic/frontend/web/$1 [L]
+    RewriteCond %{REQUEST_URI} !^/kr_bd/basic/(frontend|backend)/web/(assets|css|js)/
+    RewriteCond %{REQUEST_URI} !index.php
+    RewriteCond %{REQUEST_FILENAME} !-f [OR]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^.*$ /kr_bd/basic/frontend/web/index.php
+</IfModule>
